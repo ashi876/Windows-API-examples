@@ -25,7 +25,8 @@ int wmain(void) {
 
     if (r != 0) {
 
-        wcscat_s(L"wcscat_s() failed %ld", r);
+        //wcscat_s(L"wcscat_s() failed %ld", r);’‚ «‘≠æ‰
+        wcscat_s(L"wcscat_s() failed %ld", BUF_LEN, r);
     }
 
     wprintf_s(buf);

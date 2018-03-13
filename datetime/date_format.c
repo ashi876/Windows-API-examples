@@ -17,7 +17,8 @@ int wmain(void) {
      
     wchar_t buf[128] = {0};
      
-    int r = GetDateFormatEx(LOCALE_NAME_USER_DEFAULT, DATE_LONGDATE, 
+    //int r = GetDateFormatEx(LOCALE_NAME_USER_DEFAULT, DATE_LONGDATE, &lt, NULL, buf, sizeof(buf)/sizeof(buf[0]), NULL);//´ËÎªÔ­¾ä
+    int r = GetDateFormatEx(NULL, DATE_LONGDATE, 
                 &lt, NULL, buf, sizeof(buf)/sizeof(buf[0]), NULL);
 
     if (r == 0) {

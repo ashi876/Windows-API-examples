@@ -1,6 +1,6 @@
 #include <windows.h>
 #include <wchar.h>
-
+//#include <Datetimeapi.h>
 int wmain(void) {
 
     PDWORD cChars = NULL;
@@ -17,8 +17,8 @@ int wmain(void) {
      
     wchar_t buf[128] = {0};
      
-    int r = GetDateFormatEx(LOCALE_NAME_USER_DEFAULT, DATE_LONGDATE, 
-                &lt, NULL, buf, sizeof(buf)/sizeof(buf[0]), NULL);
+    //int r = GetDateFormatEx(LOCALE_NAME_USER_DEFAULT, DATE_LONGDATE, &lt, NULL, buf, sizeof(buf)/sizeof(buf[0]), NULL);//这里是原句
+	int r = GetDateFormatEx(NULL, DATE_LONGDATE, &lt, NULL, buf, sizeof(buf)/sizeof(buf[0]), NULL);
 
     if (r == 0) {
     

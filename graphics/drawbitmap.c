@@ -43,7 +43,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
 
         case WM_CREATE:
      
-             hBitmap = (HBITMAP) LoadImageW(NULL, L"C:\\prog\\slovakia.bmp", 
+             hBitmap = (HBITMAP) LoadImageW(NULL, L".\\slovakia.bmp", 
                         IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE);
 
              if (hBitmap == NULL) {

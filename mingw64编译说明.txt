@@ -1,0 +1,21 @@
+除了正常的编译参数外，因为这个教程中大量使用了unicode
+比如wWinMain()这样的，所以编译时如果提示找不到主函数请加上
+-municode
+这个参数～
+
+这个教程中的一些winapi函数只有vista以后的系统才支持，所以在ＸＰ系统下有些源码要想通过编译可能要改动
+
+所有文件夹下的makefile实测在npmingw64集成包环境中编译通过，有约五个左右的源码文件我改动过，不改编译不了，在改动处我做了说明
+
+在集成包的conemu命令行中可以直接在各文件夹下运行make命令或运行makeAll批处理全部编译，如果你用的不是集成包请自行配置好mingw的环境变量
+
+这些源码可以直接学会winapi,请按如下文件夹顺序学习效果最佳
+    Main
+    System
+    Strings
+    Datetime
+    Firststeps
+    Menus
+    Controls
+    Graphics
+

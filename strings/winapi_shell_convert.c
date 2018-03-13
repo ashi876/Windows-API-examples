@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include "Shlwapi.h"
 
-#pragma comment(lib, "Shlwapi.lib")
+//#pragma comment(lib, "Shlwapi.lib")
 
 int wmain(void) {
 

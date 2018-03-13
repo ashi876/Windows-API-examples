@@ -1,6 +1,6 @@
 #include <windows.h>
 #include <wchar.h>
-
+#define BUF_LEN 25//这句比原教程后加的
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 void CreateLabels(HWND);
 
