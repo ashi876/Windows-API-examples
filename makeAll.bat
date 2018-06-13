@@ -1,17 +1,17 @@
 set srcpath=%~dp0
 cd /d %srcpath%controls
-make
+make -j4
 cd /d %srcpath%firststeps
-make
+make -j4
 cd /d %srcpath%main
-make
+make -j4
 cd /d %srcpath%strings
-make
+make -j4
 cd /d %srcpath%datetime
-make
+make -j4
 cd /d %srcpath%graphics
-make
+make -j4
 cd /d %srcpath%menus
-make
+make -j4
 cd /d %srcpath%system
-make
+make -j4
